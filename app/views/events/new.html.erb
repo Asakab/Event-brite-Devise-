@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+
+<h1> Créé ton event!! </h1>
+
+
+  
+  <%=form_tag :action => :create do %>
+  <%= label_tag :description, 'Description' %><br>
+  <%= text_field_tag :description %> <br><br>
+  <%= label_tag :date, 'Date' %><br>
+  <%= date_field_tag :date %><br><br>
+  <%= label_tag :place, 'L\'endroit' %><br>
+  <%= text_field_tag :place %><br><br>
+  <%= submit_tag 'Créer l\'événement' %>
+
+  <% end %>
+
+  </div>
+  </div>
+

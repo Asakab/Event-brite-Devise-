@@ -1,0 +1,39 @@
+
+<% if %>
+  <% user_signed_in? %>
+
+
+     <li>
+      <%= "Bienvenue " + current_user.name %>
+    </li>
+
+    <li>
+      <%= link_to "créer ton évenement", new_event_path %>
+    </li>
+
+   <li>
+      <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %>
+   </li>
+
+   <li>
+     <%= link_to "modifie ton compte", edit_user_registration_path %> 
+   </li>
+
+
+<% else %>
+
+  <li>
+    <%= link_to "Créer un compte", new_user_registration_path %>
+  </li>
+
+  <li>
+    <%= link_to "Se connecter", new_user_session_path %>
+    </li>
+
+    <% end %>
+
+
+
+
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>

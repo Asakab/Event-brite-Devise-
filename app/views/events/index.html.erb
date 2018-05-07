@@ -1,0 +1,36 @@
+<h1>Liste des événements</h1>   
+  <p><%= link_to "Ajoute un événement!", new_event_path %><p>
+
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+
+      <th>Date</th>
+
+      <th>Lieu</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.description %></td>
+        <td><%= event.date %></td>
+        <td><%= event.place %></td>
+        <td><%= current_user.name %></td>
+        
+
+     
+      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+ 
+<br>
+ 
+ 
