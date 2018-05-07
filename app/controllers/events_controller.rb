@@ -17,9 +17,12 @@ class EventsController < ApplicationController
 
 
 def show
+
 end
 
 def edit
+ @event = Event.find(params[:id])
+
 end
 
 

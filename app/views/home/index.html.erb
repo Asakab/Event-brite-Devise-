@@ -8,9 +8,11 @@
     </li>
 
     <li>
-      <%= link_to "créer ton évenement", new_event_path %>
-    </li>
-
+      <%= link_to "Crée ton évenement", new_event_path %>
+     OU 
+    
+    <%= link_to "Participe à un événement", events_path %>
+</li>
    <li>
       <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %>
    </li>
