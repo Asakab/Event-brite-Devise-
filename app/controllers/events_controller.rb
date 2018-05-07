@@ -6,7 +6,7 @@ class EventsController < ApplicationController
 
 
   def create
-  	@event = Event.new(description: params['description'], date: params['date'], place: params['place'])
+  	@event = Event.new(description: params['description'], date: params['date'], place: params['place'], price: params['price'])
   	@event.creator_id = current_user.id
   	@event.save
   end
