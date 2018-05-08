@@ -23,15 +23,15 @@
 
 
 <% else %>
-<h1> Bienvenue ! </h1>
+<h1> Bonjour ! </h1>
 
-  <li>
-    <%= link_to "Créer un compte", new_user_registration_path %>
-  </li>
+  
+    <%= link_to "Créer un compte", new_user_registration_path, class: "btn btn-lg btn-primary" %> OU
+  
 
-  <li>
-    <%= link_to "Se connecter", new_user_session_path %>
-    </li>
+  
+    <%= link_to "Se connecter", new_user_session_path, class: "btn btn-lg btn-primary" %>
+  
 
     <% end %>
 
