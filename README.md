@@ -25,7 +25,7 @@ Dans ce projet nous allons te demander de faire un site du style eventbrite , av
 
 2.1. Price (done ✅)
 
-2.2. Le paiement (un bout est done ✅ et un autre bon est incomplete ❌) 
+2.2. Le paiement (un bout est done ✅ et un autre bon est incomplete ❌ un souci avec l'affichage du prix et la redirection après le paiement) 
 
 
 
@@ -35,6 +35,10 @@ Dans ce projet nous allons te demander de faire un site du style eventbrite , av
 ```
 bundle install --without production
 ```
+
+# Stripe
+
+Pour le paiement, le code CB à entrer est ```4242 4242 4242 4242``` => code test
 
 
 

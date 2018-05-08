@@ -1,10 +1,17 @@
 class ChargesController < ApplicationController
 
 	def new
+
+      @event = Event.new(description: params['description'], date: params['date'], place: params['place'], price: params['price'])
+      @amount = @event.price
+      @event.save
+
     end
+    
 
 def create
   # Amount in cents
+ 
   @amount = @event.price
 
   customer = Stripe::Customer.create(
@@ -14,7 +21,7 @@ def create
 
   charge = Stripe::Charge.create(
     :customer    => customer.id,
-    :amount      => @amount,
+    :amount      => @event.price,
     :description => 'Paiement de N',
     :currency    => 'eur'
   )

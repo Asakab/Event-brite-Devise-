@@ -5,23 +5,24 @@
 <div class="center jumbotron">
 <div class="container">
 
-     <li>
-     <h1> <%= "Bienvenue " + current_user.name %></h1>
-    </li>
 
-    <li>
+ 
+     <h1> <%= "Bienvenue " + current_user.name %></h1>
+  
+
+   
       <%= link_to "Crée ton évenement", new_event_path, class: "btn btn-lg btn-primary" %>
      OU 
     
     <%= link_to "Participe à un événement", events_path, class: "btn btn-lg btn-primary" %>
-</li><br><br>
-   <li>
+<br><br>
+  
       <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class: "btn btn-lg btn-primary" %>
-   </li><br><br>
+   <br><br>
 
-   <li>
+  
      <%= link_to "modifie ton compte", edit_user_registration_path, class: "btn btn-lg btn-primary" %> 
-   </li><br><br>
+  <br><br>
 
 
 <% else %>
