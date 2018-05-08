@@ -36,7 +36,7 @@ Dans ce projet nous allons te demander de faire un site du style eventbrite , av
 bundle install --without production
 ```
 
-# Stripe
+### Stripe
 
 Pour le paiement, le code CB à entrer est ```4242 4242 4242 4242``` => code test
 
