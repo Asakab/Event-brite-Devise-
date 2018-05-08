@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :events
   devise_for :users
   root 'home#index'
+  get 'charges/create', to: 'charges#create', as: 'event_create'
 
   resources :charges#, :only => [:new, :create]
 
