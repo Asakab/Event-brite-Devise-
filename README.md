@@ -1,25 +1,46 @@
-# README
+# Event-brite - Devise & Stripe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dans ce projet nous allons te demander de faire un site du style eventbrite , avec l'aide de Devise
 
-Things you may want to cover:
 
-* Ruby version
+@Asak sur slack
 
-* System dependencies
+#### Lien Heroku : https://calm-wildwood-75607.herokuapp.com/
 
-* Configuration
+## Les étapes 
 
-* Database creation
+### 1. Reprise du projet Event-brite
 
-* Database initialization
+1.2. Les controllers user (done ✅)
 
-* How to run the test suite
+1.3. Création d'événement (done ✅)
 
-* Services (job queues, cache servers, search engines, etc.)
+## 2. Création d'événements
 
-* Deployment instructions
+2.1. Création (done ✅)
 
-* ...
-# Event-brite-Devise-
+2.2. Affichage (done ✅)
+
+## 2. Ajout de Stripe
+
+2.1. Price (done ✅)
+
+2.2. Le paiement (un bout est done ✅ et un autre bon est incomplete ❌) 
+
+
+
+
+## Installation
+
+```
+bundle install --without production
+```
+
+
+
+
+
+
+## Contributeurs:
+
+* @Asak : http://github/com/Asakab
