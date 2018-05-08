@@ -1,6 +1,8 @@
 
+<div class="center jumbotron">
+
 <h1>Liste des événements</h1>   
-  <h4><%= link_to "Ajoute un événement!", new_event_path %></h4>
+  <h4><%= link_to "Ajoute un événement!", new_event_path, class: "btn btn-lg btn-primary" %></h4>
 
 
 
@@ -32,10 +34,11 @@
           <td><%= event.place%></td>
           <td><%= event.price %> euros</td>
            <td><%= current_user.name %></td>
-          <td><%= link_to 'Supprimer', event, method: :delete %></td>
-          <td><%= link_to 'Participer', new_charge_path %></td>
+          <td><%= link_to 'Supprimer', event, method: :delete, class: "btn btn-lg btn-primary" %></td>
+          <td><%= link_to 'Participer', new_charge_path, class: "btn btn-lg btn-primary" %></td>
         </tr>
         </div>
 
   <%end%>
+  </table></div></div></div>
 
