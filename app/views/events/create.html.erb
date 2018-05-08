@@ -1,2 +1,8 @@
-<h1>Bonjour <%= current_user.name %>, voici ton événément : <%= @event.description %>, il aura lieu le <%= @event.date %>, à <%= @event.place %>  et le prix du billet est: <%= @event.price %>  euros</h1>
-<p><%= link_to 'clique ici pour voir la liste des événements', events_path %></p>
+<h2>Ton événément : <%= @event.description %><br>
+Date: <%= @event.date %><br> 
+Lieu: <%= @event.place %><br> 
+Prix: <%= @event.price %>  euros<br>
+Organisateur: <%= current_user.name %></h2><br>
+<h4><%= link_to 'clique ici pour voir la liste des événements', events_path %></h4>
+
+

@@ -22,9 +22,15 @@ end
 
 def edit
  @event = Event.find(params[:id])
+ redirect_to edit_event_path
 
 end
 
+def destroy
+ @event = Event.find(params[:id])
+ @event.destroy
+ redirect_to event_path
+end 
 
 def index
 	@events = Event.all

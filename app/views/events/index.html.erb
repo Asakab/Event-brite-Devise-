@@ -1,10 +1,16 @@
+
 <h1>Liste des événements</h1>   
-  <p><%= link_to "Ajoute un événement!", new_event_path %><p>
+  <h4><%= link_to "Ajoute un événement!", new_event_path %></h4>
 
 
 
 
 
+
+
+
+ 
+ 
 
 
 
@@ -26,7 +32,10 @@
           <td><%= event.place%></td>
           <td><%= event.price %> euros</td>
            <td><%= current_user.name %></td>
+          <td><%= link_to 'Supprimer', event, method: :delete %></td>
+          <td><%= link_to 'Participer', users_show_path %></td>
         </tr>
         </div>
+
   <%end%>
 

@@ -22,10 +22,12 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <%= f.label :name, 'name' %>
+<div class="field">
+  <%= f.label :name, 'name' %><br>
    <%= f.text_field :name %>
+   </div>
 
-  <div class="actions">
+  <div class="actions"><br>
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
